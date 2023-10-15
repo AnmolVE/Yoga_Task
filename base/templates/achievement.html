@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/achievement.css' %}" />
+<section id="achievements">
+    <h2>Achievements</h2>
+    <div class="achievement">
+        <img src="{% static 'images/achievement_1.jpg' %}" alt="Achievement 1">
+        <h3>Yoga Studio of the Year</h3>
+        <p>We are proud to have been awarded the "Yoga Studio of the Year" for our commitment to promoting physical and mental well-being. This recognition reflects our dedication to providing a nurturing and transformative yoga experience for our community.</p>
+    </div>
+    <div class="achievement">
+        <img src="{% static 'images/achievement_2.avif' %}" alt="Achievement 2">
+        <h3>5000 Happy Yogis</h3>
+        <p>Celebrating a community of 5000 happy yogis who have embarked on a journey of health and self-discovery with us. We're grateful for the trust and support of our amazing yoga practitioners who have made this achievement possible.</p>
+    </div>
+    <div class="achievement">
+        <img src="{% static 'images/achievement_3.jpg' %}" alt="Achievement 3">
+        <h3>International Yoga Symposium</h3>
+        <p>We had the privilege of participating in the International Yoga Symposium, where our instructors shared their expertise and insights on the benefits of yoga. It was an honor to represent our studio on a global stage.</p>
+    </div>
+    <div class="achievement">
+        <img src="{% static 'images/achievement_4.jpg' %}" alt="Achievement 4">
+        <h3>Community Outreach</h3>
+        <p>Our commitment to giving back to the community was recognized as we partnered with local organizations to offer free yoga classes to underserved populations. We believe in the power of yoga to create positive change.</p>
+    </div>
+</section>
+{% endblock %}

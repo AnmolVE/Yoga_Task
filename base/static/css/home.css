@@ -1,0 +1,125 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the sections */
+section {
+    background-color: #f5f5f5;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the hero section */
+#hero {
+    background-image: url('http://127.0.0.1:8000/static/images/yoga_image_1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-home:hover {
+    background-color: #0056b3;
+}
+
+/* Style the classes section */
+#classes {
+    background-image: url('your-classes-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Apply Flexbox to the class elements */
+.class-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.class {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: calc(33.33% - 20px); /* Three classes in a row */
+}
+
+.class img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.class h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Add styling to the Class Schedule section */
+#schedule {
+    background-color: #f5f5f5; /* Background color for the section */
+    color: #333; /* Text color for the section */
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* Background color for the table */
+    border-radius: 10px; /* Rounded corners for the table */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #007BFF; /* Background color for table header cells */
+    color: #fff; /* Text color for table header cells */
+    font-weight: bold;
+}
+
+/* Add hover effect to table rows */
+tr:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+}
+

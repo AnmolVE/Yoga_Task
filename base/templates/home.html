@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" />
+<section id="hero">
+        <!-- <div class="hero-image">
+            <img src="{% static 'images/yoga_image_1.jpg' %}" alt="Yoga and Meditation">
+        </div> -->
+        <div class="hero-content">
+            <h1>Welcome to Yoga and Meditation</h1>
+            <p>Find your inner peace and balance with us.</p>
+            <a href="#classes" class="btn-home">Explore Classes</a>
+        </div>
+    </section>
+
+    <section id="classes">
+        <h2>Our Classes</h2>
+        <div class="class">
+            <img src="{% static 'images/yoga_image_2.jpg' %}" alt="Yoga Class 1">
+            <h3>Yoga Class 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="class">
+            <img src="{% static 'images/yoga_image_3.jpg' %}" alt="Yoga Class 2">
+            <h3>Yoga Class 2</h3>
+            <p>Curabitur eget nisl at leo iaculis tincidunt in et leo.</p>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <h2>Class Schedule</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Class</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>8:00 AM - 10:00 AM</td>
+                <td>Yoga Class 1</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>6:00 PM - 8:00 PM</td>
+                <td>Yoga Class 2</td>
+            </tr>
+        </table>
+    </section>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+    {% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/donation.css' %}" />
+    <section id="donation">
+        <h2>Make a Donation</h2>
+        <p>Your support can help us continue our mission of promoting physical and mental well-being through yoga. Your contributions are vital for the growth of our yoga community.</p>
+
+        <div class="donation-options">
+            <div class="donation-option">
+                <h3>Monthly Pledge</h3>
+                <p>Consider making a recurring monthly pledge to provide stable support for our programs and initiatives.</p>
+                <button class="btn2">Read More...</button>
+            </div>
+            <div class="donation-option">
+                <h3>One-Time Donation</h3>
+                <p>Make a one-time donation to help us fund special projects, workshops, community outreach and other acheivements.</p>
+                <button class="btn2">Read More...</button>
+            </div>
+            <div class="donation-option">
+                <h3>Corporate Sponsorship</h3>
+                <p>Explore opportunities for corporate partnerships and sponsorship to support our yoga studio.</p>
+                <button class="btn2">Read More...</button>
+            </div>
+        </div>
+
+        <div class="donation-benefits">
+            <h3>Benefits of Donating</h3>
+            <ul>
+                <li>Support the growth of our yoga community.</li>
+                <li>Help us offer free yoga classes to underserved populations.</li>
+                <li>Contribute to the well-being of our practitioners.</li>
+                <li>Access exclusive events and workshops for donors.</li>
+            </ul>
+        </div>
+
+        <div class="donation-button">
+            <a href="donation_link_here" class="btn1">Make a Donation</a>
+        </div>
+    </section>
+    {% endblock %}
